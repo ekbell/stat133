@@ -1,0 +1,5 @@
+name = "Evan Bell"
+SID = "23174473"
+email = "ekbell@berkeley.edu"
+github_name = "ekbell"
+status = "enrolled"
