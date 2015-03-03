@@ -1,0 +1,23 @@
+{
+    "login": "ekbell", 
+    "url": "git@github.com:ekbell/stat133.git", 
+    "name": "Evan Bell", 
+    "email": "ekbell@berkeley.edu", 
+    "github_name": "ekbell", 
+    "status": "enrolled", 
+    "grades": {
+        "hw1": {
+            "note": "", 
+            "hash": "e742a6d8ddac3a2fc8c3998df6dae2e220d527f0", 
+            "earned": 20, 
+            "possible": 20, 
+            "penalty": 0, 
+            "parts": {
+                "hw1": {
+                    "possible": 20, 
+                    "earned": 20
+                }
+            }
+        }
+    }
+}
