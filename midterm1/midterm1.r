@@ -55,7 +55,7 @@ subset.threebronze.pop <- subset.threebronze$pop
 # whose values in <GDPPP> are strictly less that <GDPPP.cutoff>.
 
 medpopByGDPPP <- function(GDPPP.cutoff, GDPPP, pop){
-  if(length(GDPPP) != length(pop)) stop("Lenghs are not equal") 
+  if(length(GDPPP) != length(pop)) stop("Lengths are not equal") 
   return(median(pop[GDPPP < GDPPP.cutoff]))
 }
 
