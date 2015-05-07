@@ -1,0 +1,22 @@
+Total: 11/20
+
+Function 1
+0/5
+Not completed
+
+Function 2
+3/5
+The OR operator | does not quite work like that. Instead of 
+    if(vec[i] == 0|1|2|3|4|5|6|7|8|9)
+We have
+    if(vec[i]==0 | vec[i]==1 | …)
+
+Function 3
+4/5
+> hisToTheir("he")
+[1] "he"
+
+Function 4
+4/5
+There are syntax errors on line 88 and 90; but the idea is OK.
+
