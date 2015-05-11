@@ -438,3 +438,25 @@ minchin.split <- tolower(unlist(strsplit(minchin, " ")))
   
 #################################################################
 
+?
+The preceding item is optional and will be matched at most once.
+
+*
+  The preceding item will be matched zero or more times.
+
++
+  The preceding item will be matched one or more times.
+
+{n}
+The preceding item is matched exactly n times.
+
+{n,}
+The preceding item is matched n or more times.
+
+{n,m}
+The preceding item is matched at least n times, but not more than m times.
+
+
+
+
+
