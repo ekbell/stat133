@@ -456,6 +456,60 @@ The preceding item is matched n or more times.
 {n,m}
 The preceding item is matched at least n times, but not more than m times.
 
+The caret ^ and the dollar sign $ are metacharacters that respectively match the empty 
+string at the beginning and end of a line. The symbols \< and \> match the empty string 
+at the beginning and end of a word. The symbol \b matches the empty string at either edge 
+of a word, and \B matches the empty string provided it is not at an edge of a word. 
+(The interpretation of ‘word’ depends on the locale and implementation: these are all extensions.)
+
+The period . matches any single character. The symbol \w matches a ‘word’ character
+(a synonym for [[:alnum:]_], an extension) and \W is its negation ([^[:alnum:]_]). 
+Symbols \d, \s, \D and \S denote the digit and space classes and their negations 
+(these are all extensions).
+
+.
+Matches any single character (many applications exclude newlines, 
+and exactly which characters are considered newlines is flavor-, 
+character-encoding-, and platform-specific, but it is safe to assume 
+that the line feed character is included). Within POSIX bracket expressions, 
+the dot character matches a literal dot. For example, a.c matches "abc", etc.,
+but [a.c] matches only "a", ".", or "c".
+
+[]
+A bracket expression. Matches a single character that is contained within the brackets. 
+For example, [abc] matches "a", "b", or "c". [a-z] specifies a range which matches any 
+lowercase letter from "a" to "z". These forms can be mixed: [abcx-z] 
+matches "a", "b", "c", "x", "y", or "z", as does [a-cx-z].
+The - character is treated as a literal character if it is the last or the first
+(after the ^, if present) character within the brackets: [abc-], [-abc]. 
+Note that backslash escapes are not allowed. The ] character can be included in a 
+bracket expression if it is the first (after the ^) character: []abc].
+
+[^ ]
+Matches a single character that is not contained within the brackets. 
+For example, [^abc] matches any character other than "a", "b", or "c". 
+[^a-z] matches any single character that is not a lowercase letter from "a" to "z". 
+Likewise, literal characters and ranges can be mixed.
+
+
+()
+Defines a marked subexpression. The string matched within the parentheses 
+can be recalled later (see the next entry, \n). A marked subexpression is 
+also called a block or capturing group. BRE mode requires \( \).
+
+
+\n
+Matches what the nth marked subexpression matched, 
+where n is a digit from 1 to 9. This construct is vaguely defined in 
+the POSIX.2 standard. Some tools allow referencing more than nine capturing groups.
+
+*
+Matches the preceding element zero or more times. 
+For example, ab*c matches "ac", "abc", "abbbc", etc. [xyz]* 
+  matches "", "x", "y", "z", "zx", "zyx", "xyzzy", and so on. 
+(ab)* matches "", "ab", "abab", "ababab", and so on.
+
+
 
 
 
