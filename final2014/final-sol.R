@@ -506,10 +506,29 @@ the POSIX.2 standard. Some tools allow referencing more than nine capturing grou
 *
 Matches the preceding element zero or more times. 
 For example, ab*c matches "ac", "abc", "abbbc", etc. [xyz]* 
-  matches "", "x", "y", "z", "zx", "zyx", "xyzzy", and so on. 
+matches "", "x", "y", "z", "zx", "zyx", "xyzzy", and so on. 
 (ab)* matches "", "ab", "abab", "ababab", and so on.
 
+Stat 133: Regular Expression Notes
 
+grep: returns index of elements
+
+grepl: returns TRUE/FALSE for each element
+
+regexpr: returns location in each element of first match; returns -1 if no match
+returns length of match for each index
+
+gregexpr: returns vector for each element indicating the location of each match
+
+regmatches: 
+  regmatches(vector, regexpr): all matched regexpr strings (first matches)
+regmatches(vector, gregexpr): all matched gregexpr stings
+can assign new vectors to matches
+
+gsub: replace strings
+
+.+: anything
+((at){2,}) : 2 or more consecutive “at"
 
 
 
