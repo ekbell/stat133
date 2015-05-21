@@ -258,7 +258,7 @@ text(x = log(SO2012Ctry$GDP_per_person[50]), y = log(SO2012Ctry$pop[50]), SO2012
 
 ## you only need to run these two lines once:
 ##install.packages("maps")
-#library("maps")
+library("maps")
 
 world <- map('world', fill = TRUE, col = 8)
 
@@ -292,7 +292,7 @@ symbols(x = wonMedal$latitude, y = wonMedal$longtitude, circles = sqrt(wonMedal$
 
 # You only need to call these two lines once:
 ##install.packages("RColorBrewer")
-#library("RColorBrewer")
+library("RColorBrewer")
 #require("RColorBrewer")
 
 display.brewer.all()
