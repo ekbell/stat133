@@ -48,6 +48,19 @@
                     "earned": 8
                 }
             }
+        }, 
+        "midterm4": {
+            "note": "", 
+            "hash": "30e8576972ff2f2ed9b260106d3eaa680c86c342", 
+            "earned": 16, 
+            "possible": 27, 
+            "penalty": 0, 
+            "parts": {
+                "midterm4": {
+                    "possible": 30, 
+                    "earned": 16
+                }
+            }
         }
     }, 
     "section": "lab2"
