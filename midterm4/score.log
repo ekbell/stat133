@@ -25,32 +25,30 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split1, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split2, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split3, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split4, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split5, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split6, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split7, check.attributes=F)')[0]
 ERROR:root:... Expecting: True
-ERROR:root:... But got:   current is not list-like
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
 INFO:root:(2 points) R('all.equal(updateDate(sol$test.date1[[1]], sol$test.date1[[2]]), sol$test.date1.out)')[0] is True
 INFO:root:(2 points) R('all.equal(updateDate(sol$test.date2[[1]], sol$test.date2[[2]]), sol$test.date2.out)')[0] is True
-ERROR:root:(1 points) Checking R('all.equal(updateDate(sol$test.date3[[1]], sol$test.date3[[2]]), sol$test.date3.out)')[0]
-ERROR:root:... Expecting: True
-ERROR:root:... But got:   Lengths (0, 2) differ (string compare on first 0)
+INFO:root:(1 points) R('all.equal(updateDate(sol$test.date3[[1]], sol$test.date3[[2]]), sol$test.date3.out)')[0] is True
 INFO:root:Executed R('abbreviate.output <- abbreviate(sol$abbr.in, 3)')
 ERROR:root:(3 points) Checking R('all.equal(abbreviate.output, sol$abbr.out)')[0]
 ERROR:root:... Expecting: True
 ERROR:root:... But got:   Lengths (1, 4) differ (string compare on first 1)
-INFO:root:You got a 16 out of 27.
+INFO:root:You got a 17 out of 27.
