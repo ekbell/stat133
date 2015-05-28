@@ -446,11 +446,15 @@ NumJackpot <- function(k, B){
 
 # For B = 5000 and each value of k = 10000, 50000, 100000, 500000
 # Plot a histogram of the output from NumJackpot (i.e. four histograms)
-
-g1 <- NumJackpot(100, 50)
-g2<- NumJackpot(100, 500)
-g3<- NumJackpot(100, 1000)
-g4<- NumJackpot(100, 5000)
+# inga
+#g1 <- NumJackpot(100, 50)
+#g2<- NumJackpot(100, 500)
+#g3<- NumJackpot(100, 1000)
+#g4<- NumJackpot(100, 5000)
+g1 <- NumJackpot(50, 100)
+g2<- NumJackpot(500, 100)
+g3<- NumJackpot(1000, 100)
+g4<- NumJackpot(5000, 100)
 
 par(mfrow=c(2,2))
 hist(g1)

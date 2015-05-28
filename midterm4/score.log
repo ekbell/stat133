@@ -1,0 +1,54 @@
+INFO:root:Executed R('load(\'../../instructor/assignments/midterm4/midterm4-tests.rda\')')
+INFO:root:Executed R('set.seed(47)')
+INFO:root:Executed R('dice_sum.output <- dice_sum(3, 10)')
+INFO:root:(2 points) R('all.equal(dice_sum.output, sol$dice.out, check.attributes=F)')[0] is True
+INFO:root:(2 points) R('all.equal(length(dice_sum.output), 10, check.attributes=F)')[0] is True
+INFO:root:(1 points) R('all(dice_sum.output>2 & dice_sum.output<19)')[0] is True
+INFO:root:(1 points) R('all.equal(length(text1), length(sol$text1), check.attributes=F)')[0] is True
+ERROR:root:(1 points) Checking R('all.equal(text1, sol$text1, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   target is character, current is numeric
+INFO:root:(1 points) R('all.equal(text1, sol$text1alt, check.attributes=F)')[0] is True
+INFO:root:(1 points) R('all.equal(length(text2), length(sol$text2), check.attributes=F)')[0] is True
+ERROR:root:(1 points) Checking R('all.equal(text2, sol$text2, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   target is character, current is numeric
+INFO:root:(1 points) R('all.equal(text2, sol$text2alt, check.attributes=F)')[0] is True
+INFO:root:(1 points) R('all.equal(no.punct, sol$no.punct, check.attributes=F)')[0] is True
+INFO:root:(1 points) R('all.equal(length(even), length(sol$even), check.attributes=F)')[0] is True
+INFO:root:(1 points) R('all.equal(even, sol$even, check.attributes=F)')[0] is True
+ERROR:root:(4 points) Checking R('all(length(hotelCal.split)>75 & length(hotelCal.split)<90)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   False
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split1, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split2, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split3, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split4, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split5, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split6, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+ERROR:root:(6 points) Checking R('all.equal(hotelCal.split, sol$hotelCal.split7, check.attributes=F)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Length mismatch: comparison on first 1 components
+INFO:root:(2 points) R('all.equal(updateDate(sol$test.date1[[1]], sol$test.date1[[2]]), sol$test.date1.out)')[0] is True
+INFO:root:(2 points) R('all.equal(updateDate(sol$test.date2[[1]], sol$test.date2[[2]]), sol$test.date2.out)')[0] is True
+INFO:root:(1 points) R('all.equal(updateDate(sol$test.date3[[1]], sol$test.date3[[2]]), sol$test.date3.out)')[0] is True
+INFO:root:Executed R('abbreviate.output <- abbreviate(sol$abbr.in, 3)')
+ERROR:root:(3 points) Checking R('all.equal(abbreviate.output, sol$abbr.out)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Lengths (1, 4) differ (string compare on first 1)
+INFO:root:You got a 17 out of 27.
